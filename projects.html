@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="sys 的作品页 —— 正在做的东西。" />
+  <title>作品 · sys</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">sys<span class="logo-dot">.</span></a>
+    <nav class="site-nav" id="site-nav">
+      <a href="index.html#about">关于</a>
+      <a href="index.html#skills">技能</a>
+      <a href="projects.html" class="is-current">作品</a>
+      <a href="index.html#contact">联系</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page-main">
+
+    <section class="page-hero">
+      <p class="hero-eyebrow reveal">Projects</p>
+      <h1 class="page-title reveal">在做的东西</h1>
+      <p class="page-desc reveal">
+        一些用 Python 写的小东西，以及还没写完的想法。空位留给真实的项目。
+      </p>
+    </section>
+
+    <section class="section section-nopad">
+      <div class="projects-grid projects-grid-full">
+
+        <!-- 待补充：把下面的卡片换成真实项目 -->
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-no">01</span>
+            <span class="project-status">待补充</span>
+          </div>
+          <h3>项目一</h3>
+          <p>一句话描述：它是什么、给谁用、解决了什么问题。</p>
+          <p class="project-stack">技术栈 · 待补充</p>
+          <span class="project-link">链接待补充</span>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-no">02</span>
+            <span class="project-status">待补充</span>
+          </div>
+          <h3>项目二</h3>
+          <p>一句话描述：它是什么、给谁用、解决了什么问题。</p>
+          <p class="project-stack">技术栈 · 待补充</p>
+          <span class="project-link">链接待补充</span>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-no">03</span>
+            <span class="project-status">待补充</span>
+          </div>
+          <h3>项目三</h3>
+          <p>一句话描述：它是什么、给谁用、解决了什么问题。</p>
+          <p class="project-stack">技术栈 · 待补充</p>
+          <span class="project-link">链接待补充</span>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-no">04</span>
+            <span class="project-status">待补充</span>
+          </div>
+          <h3>项目四</h3>
+          <p>一句话描述：它是什么、给谁用、解决了什么问题。</p>
+          <p class="project-stack">技术栈 · 待补充</p>
+          <span class="project-link">链接待补充</span>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section section-contact">
+      <div class="section-head reveal">
+        <span class="section-index">→</span>
+        <h2>想找我聊聊？</h2>
+      </div>
+      <div class="contact-cards reveal">
+        <a class="contact-card" href="https://github.com/songyushuo" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="contact-icon">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.18-.02-2.14-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.35.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+          </svg>
+          <div>
+            <strong>GitHub</strong>
+            <span>@songyushuo</span>
+          </div>
+          <span class="contact-arrow">↗</span>
+        </a>
+
+        <a class="contact-card" href="mailto:19561425216@163.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" class="contact-icon">
+            <rect x="2.5" y="5" width="19" height="14" rx="2.5"/>
+            <path d="M3 7l9 6 9-6"/>
+          </svg>
+          <div>
+            <strong>邮箱</strong>
+            <span>19561425216@163.com</span>
+          </div>
+          <span class="contact-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> sys · 用原生代码手写</p>
+    <a href="#top" class="back-top">回到顶部 ↑</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

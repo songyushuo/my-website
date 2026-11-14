@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="sys 的个人网站 —— 喜欢 Python 和羽毛球的学生。" />
+  <title>sys · 个人网站</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- 背景画布：点阵网格 + 羽毛球飞行轨迹 -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">sys<span class="logo-dot">.</span></a>
+    <nav class="site-nav" id="site-nav">
+      <a href="#about">关于</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">作品</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top">
+      <div class="hero-grid">
+
+        <div class="hero-left">
+          <p class="hero-eyebrow reveal">潍理工 · 计算机科学与技术</p>
+          <h1 class="hero-title reveal">
+            <span class="hero-name">sys</span>
+          </h1>
+          <p class="hero-tagline reveal">
+            喜欢 <span class="accent">Python</span> 和 <span class="accent">羽毛球</span> 的学生。
+          </p>
+          <p class="hero-sub reveal">
+            写代码时追求简洁，打球时追求那一拍刚刚好的弧线。
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#contact">联系我</a>
+            <a class="btn btn-ghost" href="projects.html">看看作品</a>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal-bar">
+              <span class="dot dot-r"></span>
+              <span class="dot dot-y"></span>
+              <span class="dot dot-g"></span>
+              <span class="terminal-title">python — sys</span>
+            </div>
+            <div class="terminal-body">
+              <pre class="terminal-text" id="terminal-text"></pre><span class="terminal-caret" id="terminal-caret"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-strip reveal">
+        <div class="strip-item">
+          <span class="strip-label">专业</span>
+          <span class="strip-value">计算机科学与技术</span>
+        </div>
+        <div class="strip-item">
+          <span class="strip-label">常写</span>
+          <span class="strip-value">Python</span>
+        </div>
+        <div class="strip-item">
+          <span class="strip-label">常打</span>
+          <span class="strip-value">羽毛球</span>
+        </div>
+        <div class="strip-item">
+          <span class="strip-label">坐标</span>
+          <span class="strip-value">潍理工</span>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="向下滚动">
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ============ 关于 ============ -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span class="section-index">01</span>
+        <h2>关于我</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            我是 <strong>sys</strong>，潍理工计算机科学与技术专业的学生。日常一半时间在写 Python，
+            另一半时间在球场上。我喜欢把复杂的东西拆成简单的步骤——
+            无论是调试一段代码，还是拆解一个球路。
+          </p>
+          <p>
+            这个网站是我的一小块自留地：放一些我在做的东西、我在学的东西，
+            以及找到我的方式。
+          </p>
+        </div>
+        <div class="about-facts reveal">
+          <div class="fact">
+            <span class="fact-label">昵称</span>
+            <span class="fact-value">sys</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">学校</span>
+            <span class="fact-value">潍理工</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">专业</span>
+            <span class="fact-value">计算机科学与技术</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">关键词</span>
+            <span class="fact-value">Python · 羽毛球</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 技能 ============ -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <span class="section-index">02</span>
+        <h2>喜欢 &amp; 擅长</h2>
+      </div>
+      <div class="skills-grid">
+
+        <article class="skill-card reveal">
+          <div class="skill-icon" aria-hidden="true">
+            <!-- 代码图标 -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 14 L6 24 L16 34" />
+              <path d="M32 14 L42 24 L32 34" />
+              <path d="M27 10 L21 38" />
+            </svg>
+          </div>
+          <h3>Python</h3>
+          <p>
+            最常用的编程语言。喜欢用它写脚本、做小工具、把重复的事情自动化。
+          </p>
+          <ul class="skill-tags">
+            <li>脚本 / 自动化</li>
+            <li>小工具</li>
+            <li>持续学习中</li>
+          </ul>
+          <!-- 待补充：具体项目方向、掌握的库等，等你提供真实内容 -->
+          <p class="skill-todo">更多细分方向 · 待补充</p>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon" aria-hidden="true">
+            <!-- 羽毛球图标 -->
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="16" cy="32" r="7" />
+              <path d="M21 27 L38 10" />
+              <path d="M32 8 L40 16" />
+              <path d="M28 12 L36 20" />
+              <path d="M34 6 L42 14" />
+            </svg>
+          </div>
+          <h3>羽毛球</h3>
+          <p>
+            球场常驻选手。享受每一拍的判断与节奏，也享受打完球那种清爽的累。
+          </p>
+          <ul class="skill-tags">
+            <li>单打</li>
+            <li>步法</li>
+            <li>持续掉装备中</li>
+          </ul>
+          <!-- 待补充：球龄、擅长技术、比赛经历等，等你提供真实内容 -->
+          <p class="skill-todo">球龄 / 战绩 · 待补充</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ 作品预览 ============ -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <span class="section-index">03</span>
+        <h2>在做的东西</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- 待补充：真实项目，替换标题 / 描述 / 链接 -->
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-no">01</span>
+            <span class="project-status">待补充</span>
+          </div>
+          <h3>项目一</h3>
+          <p>这里留给你的第一个项目。一句话说明它解决了什么问题。</p>
+          <span class="project-link">链接待补充</span>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-no">02</span>
+            <span class="project-status">待补充</span>
+          </div>
+          <h3>项目二</h3>
+          <p>这里留给你的第二个项目。可以是课程设计、小工具或实验。</p>
+          <span class="project-link">链接待补充</span>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-no">03</span>
+            <span class="project-status">待补充</span>
+          </div>
+          <h3>项目三</h3>
+          <p>这里留给你的第三个项目。任何你愿意展示的尝试都可以。</p>
+          <span class="project-link">链接待补充</span>
+        </article>
+
+      </div>
+      <div class="section-more reveal">
+        <a class="btn btn-ghost" href="projects.html">查看全部 →</a>
+      </div>
+    </section>
+
+    <!-- ============ 联系 ============ -->
+    <section class="section section-contact" id="contact">
+      <div class="section-head reveal">
+        <span class="section-index">04</span>
+        <h2>联系我</h2>
+      </div>
+      <p class="contact-lead reveal">
+        想聊点什么？发邮件，或者去 GitHub 看看我在折腾什么。
+      </p>
+      <div class="contact-cards reveal">
+        <a class="contact-card" href="https://github.com/songyushuo" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="contact-icon">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.18-.02-2.14-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.35.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+          </svg>
+          <div>
+            <strong>GitHub</strong>
+            <span>@songyushuo</span>
+          </div>
+          <span class="contact-arrow">↗</span>
+        </a>
+
+        <a class="contact-card" href="mailto:19561425216@163.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" class="contact-icon">
+            <rect x="2.5" y="5" width="19" height="14" rx="2.5"/>
+            <path d="M3 7l9 6 9-6"/>
+          </svg>
+          <div>
+            <strong>邮箱</strong>
+            <span>19561425216@163.com</span>
+          </div>
+          <span class="contact-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> sys · 用原生代码手写</p>
+    <a href="#top" class="back-top">回到顶部 ↑</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
